@@ -1,7 +1,7 @@
-- hosts: all
+- hosts: webserver
   roles:
   - role: "myapache"
 
-- hosts: all
+- hosts: loadbalancer
   roles:
   - role: "myloadbalancer"
